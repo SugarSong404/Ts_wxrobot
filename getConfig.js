@@ -26,9 +26,10 @@ function getCFG() {
             if (typeof item.prompt !== 'string' || item.prompt.trim() === "") {
                 throw new Error(`配置文件格式错误：wxList 第 ${index + 1} 项的 prompt 必须是非空字符串！`);
             }
-            if (!Array.isArray(item.messages)) {
-                throw new Error(`配置文件格式错误：wxList 第 ${index + 1} 项的 messages 必须是一个数组！`);
+            if (typeof item.freq !== 'number' || item.freq < 0 || item.freq > 1) {
+                throw new Error(`配置文件格式错误：wxList 第 ${index + 1} 项的 freq 必须是[0,1]非空正数！`);
             }
+            item.messages = [];
         });
 
         return config.wxList;
