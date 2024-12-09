@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const API_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
 const DEFAULT_MODEL = "glm-4-plus";
-const API_KEY = "692f672288e239ff771021ca6a36da89.XWjoA5LWnwgxbw04";
+const API_KEY = "your_api_key";
 
 async function chatAi(messages) {
     try {
