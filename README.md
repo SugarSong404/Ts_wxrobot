@@ -9,12 +9,16 @@ A JSON file-configurable WeChat chatbot based on the wxchat library, embedded wi
 
 1.根据package.json配置好所需环境
 
+```
+npm install
+```
+
 2.打开config.json文件，其中是默认的配置范式
 
 wxList下每一个对象都代表着一个对话域，可以是群聊，也可以是单独的好友
 
 - chat属性设置群聊或好友的名称
-- status表示机器人当前为休眠还是启动，默认为true启动，在聊天过程中也可以使用"=SLEEP"与"=AWAKE"指令来改变状态
+- status表示程序启动时机器人为休眠还是启动，默认为true启动，在聊天过程中也可以使用"=SLEEP"与"=AWAKE"指令来改变状态
 - prompt则表示机器人的预设词
 - messgaes存储所有聊天，大于50条对话会自己清理一次，你也可以发送"=CLEAR"指令手动清理
 
@@ -32,6 +36,9 @@ chatModel我使用的是智谱清言的4-plus模型，使用时只需替换自�
 ]
 ```
 
-**更新日志**
+4.运行
 
-1.0版本，暂时还未添加vercel服务器部署，第二天再写
+```
+node index.js
+```
+
