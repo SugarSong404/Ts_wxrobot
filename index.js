@@ -55,6 +55,8 @@ class weChaty {
             return;
         }
 
+        if(Math.random() >= wxConfig.freq && message.text().indexOf(this.name)==-1)return;
+
         const que = "说话人：" + senderName + ", 内容：" + message.text();
         if (wxConfig.messages.length === 0) {
             wxConfig.messages.push({ role: "user", content: wxConfig.prompt + que });
