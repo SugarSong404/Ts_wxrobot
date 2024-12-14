@@ -5,15 +5,21 @@ A JSON file-configurable WeChat chatbot based on the wxchat library, embedded wi
 
 [wechaty/wechaty: Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt](https://github.com/wechaty/wechaty?tab=readme-ov-file)
 
+### 运行截图
+
+<img src="https://s2.loli.net/2024/12/15/IS12hWTatLcg8XO.jpg" style="zoom:33%;" />
+
 ### 如何使用我的项目？
 
-#### 1.根据package.json配置好所需环境
+#### 方式一
+
+##### 1.根据package.json配置好所需环境
 
 ```
-npm install
+npm install --dependencies
 ```
 
-#### 2.打开config.json文件，其中是默认的配置范式
+##### 2.打开config.json文件，其中是默认的配置范式
 
 wxList下每一个对象都代表着一个对话域，可以是群聊，也可以是单独的好友
 
@@ -24,7 +30,7 @@ wxList下每一个对象都代表着一个对话域，可以是群聊，也可�
 
 值得注意的是对话超过50条会自动清楚记忆，你也可以发送""=CLEAR"指令手动清理
 
-#### 3.其他文件
+##### 3.其他文件
 
 getConfig文件用于读取配置，除非想修改配置文件的格式，不然默认不用修改
 
@@ -38,7 +44,7 @@ chatModel我使用的是智谱清言的4-plus模型，使用时只需替换自�
 ]
 ```
 
-#### 4.运行
+##### 4.运行
 
 ```
 node index.js
@@ -47,3 +53,14 @@ node index.js
 测试过了没法部署在vercel等serverless服务器上了，这是由于serverless服务器是事件触发型的微服务器，没法长期运行如wechaty等任务。（不能免费嫖服务器哩）
 
 运行后手机对着终端的输出扫码，跳出各种成功就可以正常用了
+
+#### 方式二
+
+拉取docker镜像后修改镜像内工作目录app下的config.json与模型api-key
+
+修改方法见**方式一**
+
+修改后`docker run`运行
+
+镜像地址：[tangsong404/wx_docker general | Docker Hub](https://hub.docker.com/repository/docker/tangsong404/wx_docker/general)
+
