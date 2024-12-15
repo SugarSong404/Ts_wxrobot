@@ -1,15 +1,13 @@
 const axios = require('axios');
 
 const API_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
-const DEFAULT_MODEL = "glm-4-plus";
-const API_KEY = "your_api_key";
 
-async function chatAi(messages) {
+async function chatAi(messages,api) {
     try {
         const response = await axios.post(
             API_URL,
             {
-                model: DEFAULT_MODEL,
+                model: api.model,
                 messages,
                 stream: false,
                 temperature: 0.95,
@@ -18,7 +16,7 @@ async function chatAi(messages) {
             },
             {
                 headers: {
-                    Authorization: `Bearer ${API_KEY}`,
+                    Authorization: `Bearer ${api.token}`,
                     "Content-Type": "application/json",
                 },
             }

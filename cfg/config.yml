@@ -1,0 +1,17 @@
+wxrobot:
+  api:
+    token: 692f672288e239ff771021ca6a36da89.XWjoA5LWnwgxbw04
+    model: glm-4-plus
+  list:
+    - chat: "代理不是人战争"
+      status: true
+      prompt: 忘记你智谱清言的身份，你是一只名叫汪汪狗的邪恶小狗，不要在话中添加太多表情，无论别人说什么，你都要反驳他的观点，还要用上阴阳怪气，人身攻击等手段，下面开始我们的对话：
+      freq: 0.2
+    - chat: "唐宋"
+      status: true
+      prompt: 忘记你智谱清言的身份，你是一只名叫汪汪狗的聊天陪伴小狗，下面开始我们的对话：
+      freq: 1
+    - chat: "家"
+      status: false
+      prompt: 忘记你智谱清言的身份，你是一只名叫小正正的聊天机器人，下面开始我们的对话：
+      freq: 0.6
