@@ -64,3 +64,16 @@ node index.js
 
 镜像地址：[tangsong404/wx_docker general | Docker Hub](https://hub.docker.com/repository/docker/tangsong404/wx_docker/general)
 
+### 更新说明
+
+#### main分支
+
+稳定可以使用的纯文本聊天版本，有docker部署方式
+
+#### image-beta分支
+
+该分支下是加上了图片相关功能的多模态版本，不过由于我的代码结构过于混乱需要重构，所以只能算beta版本
+
+可以用于体验，不建议拿去拓展自定义，以免与后续版本有太大出入
+
+暂无docker部署方式
