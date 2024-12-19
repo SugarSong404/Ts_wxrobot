@@ -1,12 +1,12 @@
-const axios = require('axios');
+const axios = require('axios'); 
 
-async function chatAi(messages,api) {
+async function glmModelChat(input ,authentication) {
     try {
         const response = await axios.post(
-            api.chat.link,
+            authentication.chat.link,
             {
-                model: api.chat.model,
-                messages,
+                model: authentication.chat.model,
+                messages: input,
                 stream: false,
                 temperature: 0.95,
                 top_p: 0.7,
@@ -14,14 +14,13 @@ async function chatAi(messages,api) {
             },
             {
                 headers: {
-                    Authorization: `Bearer ${api.chat.token}`,
+                    Authorization: `Bearer ${authentication.token}`,
                     "Content-Type": "application/json",
                 },
             }
         );
-        if (response.data && response.data.choices && response.data.choices.length > 0) {
-            return response.data.choices[0].message;
-        }
+        if (response.data && response.data.choices && response.data.choices.length > 0)
+            return response.data.choices[0].message.content;
         return null
     } catch (error) {
         console.error("Error calling the model:", error);
@@ -29,4 +28,4 @@ async function chatAi(messages,api) {
     }
 }
 
-module.exports = { chatAi };
+module.exports = glmModelChat;

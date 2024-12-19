@@ -1,19 +1,26 @@
 {
-  "name": "wechaty",
+  "name": "we-piggy",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A YAML file-configurable WeChat chatbot based on the wxchaty library, embedded with a large model. The code is simple and low-coupling, and most locations can be easily modified to achieve custom effects",
+  "main": "we-piggy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "file-box": "^1.5.5",
-    "js-yaml": "^4.1.0",
-    "qrcode": "^1.5.4",
-    "qrcode-terminal": "^0.12.0",
-    "wechaty": "^1.20.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SugarSong404/we-piggy.git"
+  },
+  "keywords": [
+    "wechat",
+    "wx",
+    "wechaty",
+    "js",
+    "LLM"
+  ],
+  "author": "tangsong404",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SugarSong404/we-piggy/issues"
+  },
+  "homepage": "https://github.com/SugarSong404/we-piggy#readme"
 }
