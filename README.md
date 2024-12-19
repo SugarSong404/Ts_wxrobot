@@ -1,5 +1,7 @@
 # we-piggy
 
+[![Generic badge](https://img.shields.io/badge/configuration-yaml-<COLOR>.svg)](https://shields.io/)[![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://hub.docker.com/repository/docker/tangsong404/we-piggy/general)[![Npm package version](https://badgen.net/npm/v/we-piggy)](https://www.npmjs.com/package/we-piggy)[![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
+
 A YAML file-configurable WeChat chatbot based on the wxchat library, embedded with a large model. The code is simple and low-coupling, and most locations can be easily modified to achieve custom effects
 
 该库使用到的技术来自有着21K星标的wechaty仓库，感谢大佬的开源
@@ -91,12 +93,19 @@ const authen = loadGlmAuthen("./authen.yml");
 new WePiggy(config ,authen).run()
 ```
 
+### docker部署
+
+不使用上面的方法则可以通过docker部署
+
+地址[tangsong404/we-piggy general](https://hub.docker.com/repository/docker/tangsong404/we-piggy/general)
+
+拉取镜像后写好配置文件（**参考”运行所需文件“**），运行`docker run -v <your config path>:/cfg <image name>`进行使用
+
 ## 指令列表
 
 这里提供对话时的一些操作指令
 
 - SLEEP：改变piggy在该对话域的status状态，使其下线，不再回复此对话域的消息
-
 - AWAKE: 使piggy在改对话域上线
 - CLEAR: 清除piggy在该对话域的记忆，不手动清除的情况下在超过100条记忆后会自动清除
 - IMAGE: 使用`IMAGE 描述`，可以使得piggy根据你的描述回复图片
