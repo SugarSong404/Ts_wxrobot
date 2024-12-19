@@ -8,6 +8,8 @@ A YAML file-configurable WeChat chatbot based on the wxchat library, embedded wi
 
 ## 运行截图
 
+<img src="./resources/screenshot.jpg" style="zoom: 33%;" />
+
 ## 下载与使用
 
 ### 安装
@@ -88,6 +90,16 @@ const authen = loadGlmAuthen("./authen.yml");
 //以内置默认glm接口启动piggy
 new WePiggy(config ,authen).run()
 ```
+
+## 指令列表
+
+这里提供对话时的一些操作指令
+
+- SLEEP：改变piggy在该对话域的status状态，使其下线，不再回复此对话域的消息
+
+- AWAKE: 使piggy在改对话域上线
+- CLEAR: 清除piggy在该对话域的记忆，不手动清除的情况下在超过100条记忆后会自动清除
+- IMAGE: 使用`IMAGE 描述`，可以使得piggy根据你的描述回复图片
 
 ## 自定义
 

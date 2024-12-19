@@ -1,6 +1,6 @@
 {
   "name": "we-piggy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A YAML file-configurable WeChat chatbot based on the wxchaty library, embedded with a large model. The code is simple and low-coupling, and most locations can be easily modified to achieve custom effects",
   "main": "we-piggy.js",
   "scripts": {
