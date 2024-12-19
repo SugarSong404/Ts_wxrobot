@@ -1,6 +1,6 @@
 # we-piggy
 
-[![Generic badge](https://img.shields.io/badge/configuration-yaml-<COLOR>.svg)](https://shields.io/)[![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://hub.docker.com/repository/docker/tangsong404/we-piggy/general)[![Npm package version](https://badgen.net/npm/v/we-piggy)](https://www.npmjs.com/package/we-piggy)[![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
+[![Generic badge](https://img.shields.io/badge/configuration-yaml-<COLOR>.svg)](https://shields.io/) [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://hub.docker.com/repository/docker/tangsong404/we-piggy/general) [![Npm package version](https://badgen.net/npm/v/we-piggy)](https://www.npmjs.com/package/we-piggy) [![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
 
 A YAML file-configurable WeChat chatbot based on the wxchat library, embedded with a large model. The code is simple and low-coupling, and most locations can be easily modified to achieve custom effects
 
