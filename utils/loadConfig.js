@@ -7,7 +7,7 @@ const schema = {
         items: {
             chat: { type: ["string"], validate: (v) => v.trim() !== "" },
             status: { type: ["boolean"], default: true },
-            prompt: { type: ["string"], validate: (v) => v.trim() !== "" },
+            prompt: { type: ["string"], default: "", validate: (v) => v.trim() !== "" },
             freq: { type: ["number"], default: 0.3, validate: (v) => v >= 0 && v <= 1 },
             emjFreq: { type: ["number"], default: 0, validate: (v) => v >= 0 && v <= 1 },
             recOn: { type: ["boolean"], default: false },
