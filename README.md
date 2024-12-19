@@ -8,6 +8,8 @@ A YAML file-configurable WeChat chatbot based on the wxchat library, embedded wi
 
 ## 运行截图
 
+<img src="./resources/screenshot.jpg" style="zoom: 33%;" />
+
 ## 下载与使用
 
 ### 安装
