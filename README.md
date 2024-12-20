@@ -8,7 +8,7 @@ A YAML file-configurable WeChat chatbot based on the wxchat library, embedded wi
 
 ## 运行截图
 
-<img src="../../../we-piggy/resources/screenshot.jpg" style="zoom: 33%;" />
+<img src="./resources/screenshot.jpg" style="zoom: 33%;" />
 
 ## 下载与使用
 
