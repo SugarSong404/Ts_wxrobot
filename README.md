@@ -4,13 +4,11 @@
 
 A YAML file-configurable WeChat chatbot based on the wxchat library, embedded with a large model. The code is simple and low-coupling, and most locations can be easily modified to achieve custom effects
 
-该库使用到的技术来自有着21K星标的wechaty仓库，感谢大佬的开源
-
-[wechaty/wechaty: Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt](https://github.com/wechaty/wechaty?tab=readme-ov-file)
+该库使用到的技术来自有着21K星标的[wechaty](https://github.com/wechaty/wechaty?tab=readme-ov-file)仓库，感谢大佬的开源
 
 ## 运行截图
 
-<img src="./resources/screenshot.jpg" style="zoom: 33%;" />
+<img src="../../../we-piggy/resources/screenshot.jpg" style="zoom: 33%;" />
 
 ## 下载与使用
 
@@ -138,7 +136,16 @@ new WePiggy(config ,authen).run()
 
 参数
 
-- input : 
+- input : 历史消息数组，格式为
+
+```js
+[
+{role:"user",content:"好人，坏AI"},
+{role:"assistant",content:"我上早八"},
+...
+]
+```
+
 - authentication : 初始化传进来的认证配置
 
 返回

@@ -44,7 +44,7 @@ async function filebox_toBuffer(fileBox) {
       throw new Error('无法确定文件类型');
     }
   } catch (error) {
-    console.error('处理 FileBox 发生错误:', error);
+    console.log('处理 FileBox 发生错误:', error);
     throw error;
   }
 }
@@ -67,7 +67,7 @@ async function urlToFileBox(url) {
     return fileBox;
 
   } catch (error) {
-    console.error('URL 转 FileBox 发生错误:', error);
+    console.log('URL 转 FileBox 发生错误:', error);
     throw error;
   }
 }
